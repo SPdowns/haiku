@@ -1,15 +1,22 @@
-# Title
+# Haiku Checker
 
-#### Title, date 0000.00.00
+#### Haiku Checker, 2020/06/24
 
-#### _By Sean Downs_
+#### _By Sean Downs & Erich Richter & Joseph Pearce_
 ## Description
+This program will take in a haiku and check to see if the poem follows the rules of haiku
 
 ## Specifications
-**Behavior 1**: 
-  * Input: 
-  * Output: 
 
+Your logic should verify English syllable rules (and exceptions) one at a time.
+
+**Behavior 1**: Program will check to see if three lines of text has been inputted
+  * Input: Lorem Ipsum has been the industry's standard. It's dummy text used since the 1500s. An unknown printer took a galley of type and scrambled it to make a type specimen book.
+  * Output: True
+
+**Behavior 2**:
+* Input:
+* Output:
 
 ## Known Bugs
 * No known bugs.   
