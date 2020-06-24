@@ -9,9 +9,10 @@ $(document).ready(function() {
   $("form#journal-form").submit(function(event) {
     event.preventDefault();
     // let titleInput = $("#title").val();
-    let line1 = $("#body").val();
+    let line1 = $("#poem-entry").val();
     let haiku = new Haiku(line1);
     // console.log(haiku);
-    // console.log(line1);
+    console.log(line1);
+    console.log(haiku);
   });
 });
