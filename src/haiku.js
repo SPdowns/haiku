@@ -9,7 +9,11 @@ export class Haiku {
     this.line1Arr = newArray;
     }
 
-    
+    checkArray(){
+      return this.line1Arr.length;
+
+    }
+
   // lines() {
   //   return this.line1.split(/\r\n/);
   //   //console.log(lines())

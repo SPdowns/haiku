@@ -11,7 +11,6 @@ describe('Haiku', () => {
     const haiku = new Haiku("This is a test string.");
     haiku.lineSplit()
     expect(haiku.line1Arr).toEqual(expect.arrayContaining(["This is a test string"]));
-    console.log(haiku)
   });
 
   test("should correctly convert a string with multiple sentences into an split array", () => {
@@ -22,6 +21,7 @@ describe('Haiku', () => {
 
   test("should correctly determine if 3 items are in the array", () => {
     const haiku = new Haiku("This is a test string. This is a second second. This is the third", ["This is a test string", " This is a second second", " This is the third"])
+    haiku.lineSplit()
     haiku.checkArray()
     expect(haiku.line1Arr.length).toEqual(3)
   })
