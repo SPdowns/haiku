@@ -8,10 +8,18 @@ describe('Haiku', () => {
   });
 
   test("should correctly convert a string into an array", () => {
-  const haiku = new Haiku("This is a test string.");
-  haiku.lineSplit()
-  expect(haiku.line1Arr).toEqual(expect.arrayContaining(["This is a test string", ""]));
+    const haiku = new Haiku("This is a test string.");
+    haiku.lineSplit()
+    expect(haiku.line1Arr).toEqual(expect.arrayContaining(["This is a test string"]));
+    console.log(haiku)
   });
+
+  test("should correctly convert a string with multiple sentences into an split array", () => {
+    const haiku = new Haiku("This is a test string. This is a second second. This is the third");
+    haiku.lineSplit()
+    expect(haiku.line1Arr).toEqual(expect.arrayContaining(["This is a test string", "This is a second second", "This is the third"]));
+  });
+    
 });
 
 //.to.have.keys('This is a test string','This should be lines','And one last word, smores')
