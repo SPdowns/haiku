@@ -1,5 +1,5 @@
 export class Haiku {
-  constructor(line1, warning) {
+  constructor(line1) {
     this.line1 = line1;
     this.warning = "";
     this.line1Arr = [];
@@ -20,6 +20,20 @@ export class Haiku {
 
   }
   }
+
+
+//  numberOfVowels = function(){
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     let vowelCount = 0;
+//     for(let char of this.body.toLowerCase()) {
+//       if(vowels.includes(char)){
+//         vowelCount++;
+//       }
+//     }
+//     return vowelCount;
+//   }
+
+
 }
   
 
