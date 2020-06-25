@@ -8,9 +8,8 @@ describe('Haiku', () => {
   });
 
   test("should correctly convert a string into an array", () => {
-  const haiku = new Haiku("This is a test string.", ["This is a test dddString"]);
+  const haiku = new Haiku("This is a test string.");
   haiku.lineSplit()
-  console.log(haiku)
   expect(haiku.line1Arr).toEqual(expect.arrayContaining(["This is a test string", ""]));
   });
 });
