@@ -1,13 +1,15 @@
 export class Haiku {
-  constructor(line1) {
+  constructor(line1, line1Arr) {
     this.line1 = line1;
-    
+    this.line1Arr = line1Arr;
   }
 
   lineSplit() {
-    return line1.split('.');
+    let newArray = this.line1.split('.');
+    this.line1Arr.push(newArray);
     }
   
+    
   // lines() {
   //   return this.line1.split(/\r\n/);
   //   //console.log(lines())

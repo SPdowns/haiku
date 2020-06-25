@@ -8,7 +8,10 @@ describe('Haiku', () => {
   });
 
   test("should correctly split the text at a peroid", () => {
-  const haiku = new Haiku("This is a test string. This should be lines. And one last word, smores.");
-  expect(haiku.line1).toEqual(["This is a test string.", "This should be lines.", "And one last word, smores."])
+  const haiku = new Haiku("This is a test string. This should be lines. And one last word, smores.",[]);
+  console.log(haiku)
+  expect(haiku.line1Arr).toEqual(["This is a test string", "This should be lines", "And one last word, smores."])
   });
 });
+
+//.to.have.keys('This is a test string','This should be lines','And one last word, smores')
