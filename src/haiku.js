@@ -11,14 +11,14 @@ export class Haiku {
     this.line1Arr = newArray;
     }
 
-    checkArray(){
-      this.warning = "please enter exactly 3 lines" 
-      if(this.line1Arr.length !== 3){
-        return this.warning
-      } else {
-      return this.line1Arr.length;
+  checkArray(){
+    this.warning = "please enter exactly 3 lines" 
+    if(this.line1Arr.length !== 3){
+      return this.warning
+    } else {
+    return this.line1Arr.length;
 
-    }
+  }
   }
 }
   

@@ -3,8 +3,8 @@ import { Haiku } from "./../src/haiku.js"
 describe('Haiku', () => {
 
   test("should correctly declare a haiku", () => {
-    const haiku = new Haiku("This is a test string. This should be lines. And one last word, smores");
-    expect(haiku.line1).toEqual("This is a test string. This should be lines. And one last word, smores");
+    const haiku = new Haiku("String Line");
+    expect(haiku).toMatchObject({line1: "String Line", line1Arr: [], warning: ""});
   });
 
   test("should correctly convert a string into an array", () => {
@@ -20,7 +20,7 @@ describe('Haiku', () => {
   });
 
   test("should correctly determine if array length does not equal 3", () => {
-    const haiku = new Haiku("This is a test string. This is a second second. This is the third")
+    const haiku = new Haiku("This is a test string. This is a second second. This is the third. This is line 4")
     haiku.lineSplit()
     haiku.checkArray()
     console.log(haiku.line1Arr.length)
@@ -31,8 +31,8 @@ describe('Haiku', () => {
     const haiku = new Haiku("This is a test string. This is a second second. This is the third")
     haiku.lineSplit()
     haiku.checkArray()
-    expect(haiku.line1Arr.length).toEqual(3)
-  })
+    expect(haiku.checkArray()).toEqual(3)
+  });
     
 });
 
