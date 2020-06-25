@@ -20,11 +20,11 @@ describe('Haiku', () => {
   });
 
   test("should correctly determine if array length does not equal 3", () => {
-    const haiku = new Haiku("This is a test string. This is a second second. This is the third. This is fourth")
+    const haiku = new Haiku("This is a test string. This is a second second. This is the third")
     haiku.lineSplit()
     haiku.checkArray()
     console.log(haiku.line1Arr.length)
-    expect(haiku.warning).toEqual("please enter exactly 3 lines")
+    expect(haiku.checkArray()).toEqual("please enter exactly 3 lines")
   });
 
   test("should correctly determine if 3 items are in the array", () => {

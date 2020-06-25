@@ -1,8 +1,9 @@
 export class Haiku {
-  constructor(line1) {
+  constructor(line1, warning) {
     this.line1 = line1;
+    this.warning = "";
     this.line1Arr = [];
-    this.warning = "please enter exactly 3 lines" 
+    
   }
 
   lineSplit() {
@@ -11,14 +12,20 @@ export class Haiku {
     }
 
     checkArray(){
-      if(this.line1Arr !== 3){
+      this.warning = "please enter exactly 3 lines" 
+      if(this.line1Arr.length !== 3){
         return this.warning
       } else {
       return this.line1Arr.length;
 
     }
   }
-  // lines() {
+}
+  
+
+
+
+// lines() {
   //   return this.line1.split(/\r\n/);
   //   //console.log(lines())
   // }
@@ -30,7 +37,6 @@ export class Haiku {
 
   //console.log(lineCount());
 
-}
 
 
 // String.prototype.lines = function() { return this.split(/\r*\n/); }
